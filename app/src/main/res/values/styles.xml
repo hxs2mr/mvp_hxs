@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorNavAct</item>
+        <item name="colorPrimaryDark">@color/colorNavAct</item>
+        <item name="colorAccent">@color/colorNavAct</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+ <!--       <item name="android:windowAnimationStyle">@style/noAnimation</item>-->
+    </style>
+
+    <!--为解决 侧滑关闭 以后 又出现一道阴影-->
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="ToolbarTheme">
+        <!-- 更换Toolbar OVerFlow menu icon -->
+        <!--<item name="actionOverflowButtonStyle">@style/OverFlowIcon</item>-->
+        <!-- 设置 toolbar 溢出菜单的文字的颜色 -->
+        <item name="android:textColor">@color/colorWhite</item>
+        <!-- 设置 显示在toobar上菜单文字的颜色 -->
+        <item name="actionMenuTextColor">@color/colorWhite</item>
+        <!-- 设置toolbar 弹出菜单的字体大小和溢出菜单文字大小-->
+        <!--<item name="android:textSize">15sp</item>-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!--app:subtitleTextColor="@color/colorWhite"-->
+        <!--app:titleTextColor="@color/colorWhite"-->
+        <!--contentInsetStart-->
+        <!--<item name="android:contentInsetStart">@dimen/d0</item>-->
+    </style>
+
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <!--设置为false即可使menu位置位于toolbar之下-->
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <!--<item name="android:paddingRight">5dp</item>-->
+        <item name="android:popupBackground">?attr/colorPrimary</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="BorderLess">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+
+        <!--
+          有界水波纹 ?android:attr/selectableItemBackground
+          无界 selectableItemBackgroundBorderless
+       -->
+    </style>
+    <style name="notitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="DefaultTheme" parent="AppTheme">
+    </style>
+</resources>
